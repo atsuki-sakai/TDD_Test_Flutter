@@ -351,6 +351,22 @@ void main() {
       logic.input("=");
       expect(logic.text, "14");
     });
+    test("123+77-100=100", () {
+      logic.input("1");
+      logic.input("2");
+      logic.input("3");
+      logic.input("+");
+      logic.input("7");
+      logic.input("7");
+      logic.input("=");
+      expect(logic.text, '200');
+      logic.input("-");
+      logic.input("1");
+      logic.input("0");
+      logic.input("0");
+      logic.input("=");
+      expect(logic.text, "100");// "-100"になる。
+    },skip: true);
   });
 
   group("引き算", () {

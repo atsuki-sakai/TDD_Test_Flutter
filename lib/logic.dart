@@ -68,7 +68,6 @@ class Logic {
       } else if (_memorialOperation == "-") {
         _displayValue = _memorialValue - _currentValue;
       }
-
       _clear();
     } else if (text == "x" || text == "/") {
       if (_previousOperation == "") {

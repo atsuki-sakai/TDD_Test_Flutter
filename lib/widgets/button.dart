@@ -12,6 +12,7 @@ class Button extends StatelessWidget {
 
   final FuncOnPress onPressed;
 
+  // POINT: 一意のKEYをsuperで付与している。
   Button(this.text, this.colorButton, this.colorText, this.onPressed)
       : super(key: Key(text));
 
